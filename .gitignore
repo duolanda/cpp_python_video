@@ -3,6 +3,7 @@
 build/
 out/
 .idea/
+cmake-build-relwithdebinfo
 
 # Prerequisites
 *.d

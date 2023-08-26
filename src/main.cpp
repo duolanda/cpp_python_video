@@ -12,6 +12,8 @@ int main(int argc, char *argv[]) {
 	import_array();
 
 	// 导入 Python 模块
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("sys.path.append(\".\")");
 	PyObject *pModule = PyImport_ImportModule("read_video");
 	if (pModule == nullptr) {
 		std::cerr << "Cannot import read_video.py" << std::endl;
